@@ -40,6 +40,10 @@ def job(job_id):
                       'job.id = ?', [job_id], single=True)
     return render_template('job.html', job=job)
 
+@app.route('/employer/<employer_id>')
+def employer():
+    return render_template('employer.html')
+
 
 @app.route('/')
 @app.route('/jobs')

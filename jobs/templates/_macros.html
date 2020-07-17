@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <macro name="show_job" params="job"></macro>
+<div class="card adjust-height">
+  <header class="card-header">
+    <p class="card-header-title">
+        <a {{ job['title'] }}></a>a>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+        <p>
+            <a>{{ job['employer_name'] }} /n ${{ job['salary'] }} /n {{ job['description'] }}</a>>
+        </p>>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

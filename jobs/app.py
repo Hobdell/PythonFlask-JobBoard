@@ -52,8 +52,8 @@ def employer(employer_id):
 
 
 @app.route('/employer/<employer_id>/review')
-def review(methods: tuple):
-
+def review():
+    pass
 
 @app.route('/')
 @app.route('/jobs')

@@ -51,6 +51,10 @@ def employer(employer_id):
     return render_template('employer.html', employer=employer, jobs=jobs, reviews=reviews)
 
 
+@app.route('/employer/<employer_id>/review')
+def review(methods: tuple):
+
+
 @app.route('/')
 @app.route('/jobs')
 def jobs():
